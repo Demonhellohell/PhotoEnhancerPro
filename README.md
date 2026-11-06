@@ -4,7 +4,7 @@ Fast browser-based photo enhancement with bulk upload, background processing, be
 
 ## Features
 
-- Bulk upload and sequential processing
+- Bulk upload with automatic sequential processing
 - Background AI-style enhancement for clarity, sharpness, brightness, contrast, and color
 - Natural clarity, crisp detail, and max resolution presets
 - Interactive before/after slider
