@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lucid Enhance — Fast photo upscaling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+<div class="brand"><span class="brand-mark">✦</span><span>lucid</span><small>ENHANCE</small></div>
+<nav><a class="nav-item active" href="#workspace"><span>◈</span>Enhance</a><a class="nav-item" href="#history"><span>◷</span>History <em>12</em></a></nav>
+<div class="side-bottom"><div class="mini-card"><div class="mini-card-icon">⚡</div><div><strong>Fast lane</strong><p>Images process locally</p></div></div><a class="nav-item" href="#settings"><span>⚙</span>Settings</a><div class="profile"><div class="avatar">AK</div><div><strong>Alex Kim</strong><small>Free workspace</small></div><span class="dots">•••</span></div></div>
+</aside>
+<main class="main-content" id="workspace">
+<header class="topbar"><div><p class="eyebrow">IMAGE WORKSPACE / 01</p><h1>Enhance your photos</h1></div><div class="top-actions"><button class="text-btn" id="clearAll">Clear all</button><button class="upgrade-btn">Upgrade <span>↗</span></button></div></header>
+<section class="hero-grid">
+<div class="upload-card" id="dropZone"><div class="upload-glow"></div><div class="upload-icon">↥</div><h2>Drop photos to enhance</h2><p>Process a whole batch, one photo at a time.</p><button class="primary-btn" id="browseBtn">Choose photos <span>⌘ K</span></button><input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp,image/heic,image/heif" multiple hidden /><div class="upload-meta"><span>PNG</span><span>JPG</span><span>WEBP</span><span>HEIC</span><b>Up to 50 files</b></div></div>
+<div class="quality-card"><div class="card-heading"><div><p class="eyebrow">YOUR PRESET</p><h3>Natural clarity</h3></div><span class="status-dot"></span></div><p class="muted">Clean detail, true-to-life color, zero artificial look.</p><div class="slider-row"><span>Subtle</span><input type="range" id="strength" min="1" max="4" value="2"><span>Bold</span></div><div class="preset-list"><button class="preset active" data-strength="2"><span>✧</span> Natural clarity <b>2×</b></button><button class="preset" data-strength="3"><span>◌</span> Crisp detail <b>4×</b></button><button class="preset" data-strength="4"><span>✺</span> Max resolution <b>8×</b></button></div><div class="speed-note"><span>⚡</span><div><strong>Fast processing</strong><small>Average 3–5 sec per image</small></div></div></div>
+</section>
+<section class="queue-section"><div class="section-title"><div><p class="eyebrow">BATCH QUEUE <span id="queueCount">0 PHOTOS</span></p><h2>Ready to enhance</h2></div><button class="ghost-btn" id="addMore">+ Add more</button></div><div class="queue-list" id="queueList"><div class="empty-state"><div class="empty-icon">▧</div><strong>Your batch is waiting</strong><p>Add two or more photos to see them here.</p></div></div></section>
+<section class="output-section" id="outputSection" hidden><div class="section-title"><div><p class="eyebrow">FINISHED OUTPUT</p><h2>Download & share</h2></div><button class="ghost-btn" id="downloadAll">↓ Download all</button></div><div class="output-card"><div class="output-preview"><img id="featuredPreview" alt="Enhanced preview"><div class="before-after"><span>BEFORE</span><span>AFTER</span></div></div><div class="output-info"><div class="output-name"><div class="file-icon">✦</div><div><strong id="featuredName">enhanced-photo.jpg</strong><small id="featuredMeta">Enhanced · 2× clarity</small></div><span class="check">✓</span></div><div class="divider"></div><div><p class="eyebrow">DOWNLOAD THE PIC</p><div class="format-grid"><button data-format="jpeg">JPEG <small>Best quality</small></button><button data-format="jpg">JPG <small>Universal</small></button><button data-format="png">PNG <small>Lossless</small></button><button data-format="webp">WEBP <small>Small size</small></button><button data-format="pdf">PDF <small>Print ready</small></button></div></div><div class="share-block"><p class="eyebrow">SHARE DIRECTLY</p><div class="share-row"><button class="share instagram" data-share="Instagram">◎<span>Instagram</span></button><button class="share facebook" data-share="Facebook">f<span>Facebook</span></button><button class="share x" data-share="X">𝕏<span>Post</span></button><button class="share copy" data-share="Copy link">↗<span>Copy link</span></button></div><small class="quality-lock">♢ Full resolution preserved · No compression</small></div></div></div></section>
+</main></div><div class="toast" id="toast"></div><script src="app.js"></script>
+</body></html>
